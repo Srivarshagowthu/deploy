@@ -9,10 +9,6 @@
   "test": "echo \"Error: no test specified\" && exit 1"
 },
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 70b0e7b55a7d84493c316a16a83a3d621d4d2984
   "author": "",
   "license": "ISC",
   "dependencies": {
