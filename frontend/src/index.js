@@ -14,17 +14,18 @@ Coded by www.creative-tim.com
 */
 
 import React from "react";
-import { createRoot } from "react-dom";
+import * as ReactDOMClient from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App"; // Assuming App.js is in the same directory as this file or adjust the path accordingly
+import App from "App";
 
 const container = document.getElementById("root");
 
 // Create a root.
-const root = createRoot(container);
+const root = ReactDOMClient.createRoot(container);
 
 root.render(
   <BrowserRouter>
     <App />
   </BrowserRouter>
 );
+
