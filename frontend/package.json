@@ -34,7 +34,7 @@
     "react-dom": "18.2.0",
     "react-flatpickr": "3.10.13",
     "react-router-dom": "6.10.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^3.0.1",
     "react-syntax-highlighter": "15.5.0",
     "web-vitals": "3.3.1"
   },
@@ -44,7 +44,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint ./src",
-    "prettify": "prettier --write ."
+    "prettify": "prettier --write .",
+    "install-babel-plugins": "npm search @babel/plugin-* --json | jq -r '.[] | .name' | xargs npm install --save-dev"
   },
   "eslintConfig": {
     "extends": [
@@ -65,6 +66,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "@babel/plugin-transform-arrow-functions": "^7.24.7",
     "eslint": "8.38.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
