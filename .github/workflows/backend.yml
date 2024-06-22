@@ -20,18 +20,12 @@ jobs:
 
       - name: Install backend dependencies
         run: |
-          cd backend  # Replace with your actual backend directory
+          cd backend
           npm install
 
-      - name: Build backend (if applicable)
+      - name: Start backend server
         run: |
-          cd backend  # Replace with your actual backend directory
-          # Example build command, adjust as per your backend setup
-          npm run build
-
-      - name: Restart backend service
-        run: |
-          cd backend  # Replace with your actual backend directory
-          pm2 restart app.js  # Replace 'app.js' with your actual entry file
+          cd backend
+          npm start  # or npm run start
 
       # Additional steps as needed for database migrations, etc.
